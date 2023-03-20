@@ -6,7 +6,6 @@ import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -16,7 +15,7 @@ import jakarta.persistence.Table;
 import projeto.application.entities.enums.OrderStatus;
 
 
-@Entity
+@javax.persistence.Entity
 @Table(name = "tb_order")
 public class Order implements Serializable{
 	private static final long serialVersionUID = 1L;
